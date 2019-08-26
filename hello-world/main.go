@@ -6,6 +6,9 @@ const englishHelloPrefix = "Hello, "
 
 // Hello function return string "Hello, "+name
 func Hello(name string) string {
+	if name == "" {
+		name = "world"
+	}
 	return englishHelloPrefix + name
 }
 
